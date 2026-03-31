@@ -12,7 +12,7 @@ def lambda_handler(event, context):
             {
                 'ResourceType': '',
                 'Tags': [
-                    {'Key': 'Name', 'Value': 'Lambda-EC2'}
+                    {'Key': 'ravina', 'Value': 'Lambda-EC2'}
                 ]
             }
         ]
