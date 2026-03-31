@@ -10,7 +10,7 @@ def lambda_handler(event, context):
         MaxCount=1,
         TagSpecifications=[
             {
-                'ResourceType': 'instance',
+                'ResourceType': '',
                 'Tags': [
                     {'Key': 'Name', 'Value': 'Lambda-EC2'}
                 ]
