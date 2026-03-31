@@ -1,7 +1,3 @@
-import boto3
-
-ec2 = boto3.client('ec2')
-
 def lambda_handler(event, context):
     response = ec2.run_instances(
         ImageId='ami-',  # replace with valid AMI
@@ -12,11 +8,8 @@ def lambda_handler(event, context):
             {
                 'ResourceType': '',
                 'Tags': [
-
-                    {'Key': 'rathodravina-prod', 'Value': 'Lambda-EC2'}
-
+                    {'Key': 'Name', 'Value': 'Lambda-EC2'}
                 ]
             }
         ]
     )
-
